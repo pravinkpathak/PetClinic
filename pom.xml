@@ -455,6 +455,5 @@
             </build>
         </profile>
    </profiles>
-
     <url>demopetclinic</url>
 </project>
