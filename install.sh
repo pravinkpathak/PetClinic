@@ -21,6 +21,8 @@ sudo add-apt-repository \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
 
+docker container run -d -p 9000:9000 --name sonarqube sonarqube:lts
+
 # Install Kubernetes
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
